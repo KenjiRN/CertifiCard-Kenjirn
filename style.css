@@ -1,161 +1,93 @@
 @font-face {
-  font-family: 'HARRYP__.TTF';src: url('HARRYP__.TTF'); /*Para os demais navegadores*/
-  font-weight: normal;font-style: normal;}
-
-@font-face {
-  font-family: 'Animales';src: url('Animales.ttf'); /*Para os demais navegadores*/
-  font-weight: normal;font-style: normal;}
-
-@keyframes bounce {
-  0%, 20%, 60%, 100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+    font-family: 'HARRYP__.TTF';src: url('HARRYP__.TTF'); /*Para os demais navegadores*/
+    font-weight: normal;font-style: normal;}
+*{
+    text-align: center;
+    font-family: 'HARRYP__.TTF';src: url('HARRYP__.TTF');
 }
+  
+ /*  body{
+    background:url(https://i.pinimg.com/originals/4c/a0/2d/4ca02d4bdf7e6adab39d407041a5bdfe.gif)no-repeat bottom center scroll;
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+   }  */
+
+
+
+ /* body{
+    background:url(https://i.pinimg.com/originals/4c/a0/2d/4ca02d4bdf7e6adab39d407041a5bdfe.gif);
+    background-size:cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}*/
+
 
 body{
-  background: url('https://i.pinimg.com/originals/4c/a0/2d/4ca02d4bdf7e6adab39d407041a5bdfe.gif')no-repeat center center fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
-    font-family: 'HARRYP__.TTF', serif;
-    margin:0;
-    bottom:0;
-    margin-bottom: 10px;
-   /* margin-left: auto;
-    margin-right:auto; */
+    background:url(https://i.pinimg.com/originals/4c/a0/2d/4ca02d4bdf7e6adab39d407041a5bdfe.gif)no-repeat center center fixed;
+    background-size: cover;
 }
 
-   html{
-    max-height: auto;
-    max-width: auto;
-   }  
-  
-  section{
-    background-image:url("https://i.ibb.co/Ttf3tcX/card-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png");
+.imge{
+    background-image:url(https://i.ibb.co/Ttf3tcX/card-removebg-preview-removebg-preview-removebg-preview-removebg-preview.png);
+
     background-size:cover;
-    display:block;
+    display:fixed;
     margin-left: auto;
     margin-right:auto;
     margin-top:80px;
     padding-bottom:220px;
-    max-width: 700px;  
-    max-height: 700px;  
-    
-  }
-  .one{       /*REVISADA*/
-    font-size: 34px;
-    display: relative;
-    padding-bottom: 60px;;
-    padding-left: 50px;
-    max-height: 380px;
-    max-width: 500px;
-    font-weight: 
-   
-  }
-
-
- 
-
-  header{                    /*OK*/
-    height:150px;
-    width: 550px;
-    margin-left:auto;
-    margin-right:auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
- .aaa{                       /*class da imagem do header*/
-    width: 130px;
-    height:130px;
-    border-radius:100%;
-    display:block;
-    transform:translatey(48%); 
-    margin-top: 70px;
-  }
-
-  h1{                     /*OK*/
-    font-size:  42px;
-    text-align:center;
-    padding-top:100px;
-    margin-top: 120px;
-  }
-  h2{               /*titulo da div ONE*/
-    padding-left:45px;
-    font-size:  40px;
-    margin-top: 90px;
-    margin-bottom: 0px;
-  }
-  
-  .qqq{               /*CARIMBO ALURA*/
-    width: 20%;
+    width: 400px;  
+    height: 300px;
+     
+}
+header{
+    display: block;
+    width:400px;
+    height: 400px;
+}
+.qqq{     /*BOTAO ALURA*/
+    width: 70px;
+    height: 70px;  
     position: relative;
-    bottom: 130px; 
-    left: 470px;
-    transition: all 1s;
-    cursor: pointer;
-    margin-right:0;
-    float:left;
-    
-  }
+    left: 120px;
+    bottom: 30px;
+
+}
+.example-item{     /*li*/
+    padding: 4px;
+    font-size: 20px;
+    position: relative;
+    top: 34px;
+    right: 10px;
+    list-style: none;
+    text-align: start;
   
-  .a1 {            /*simbolos redes sociais*/
-    
-      color: transparent;
-      text-decoration: none;
-      background-color: #0000ff00;
-      
-      box-shadow: 0px 0px 1px 0px #00000700;
-      /*   opacity: 0.9; */
-      transition: 0.7s;
-      padding: 0px 0px 0px 9px;
-      margin-left: 30px;
-  }
-
-  .kiko{        /*REDES SOCIAIS*/
-    background-size:cover;
-
-    margin-top:80px;
-    padding:60px;
-    max-width: 10px; 
-    display: inline;
-
-  }
-  #img3 {                 /*REDES SOVCIAIS*/
-      padding: 1px;
-      width: 35px;
-      height: 30px;
-      padding: 0px 0px;
-      margin: 0px;
-      vertical-align: baseline;
-      list-style: none;
-      border: 0px solid white;
-      background-color: none;
-      display: inline;
-      transform: translatey(0px);
-      
-      transition: 0.7s;
-  }
-  #img3:hover{
-    animation: bounce 1s;
-  }
-  
-  a {                     /*cores dos il*/
+}
+a{
     text-decoration: none;
     color: #5b2314;
-  }
+}
 
 
-.efeito-4:hover{
-  animation: bounce 1s;
-  
+h1{
+    position: relative;
+    top: 56px;
+    right: 40px;
+    
+}
+.redes{
+    width: 130px;
+    height: 100px;
+    position: relative;
+    left: 120px;
+    bottom:14px;
 
+}
+#img3{
+    width: 22px;
+    height: 22px;   
 }
